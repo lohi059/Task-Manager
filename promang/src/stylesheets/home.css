@@ -1,0 +1,81 @@
+.home{
+    width:100vw;
+    height:100vh;
+    display:flex;
+}
+
+.menu{
+    display:flex;
+    list-style: none;
+    color:white;
+    align-items: center;
+    justify-content: center;
+    height:60px;
+}
+
+.sidebar{
+    width:200px;
+    height:100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 100%, rgba(0,212,255,1) 100%);
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    position:relative;
+    left:0px;
+    transition-duration: 0.5s;
+    transition-property: left;
+}
+
+.sidebarlist{
+    display:flex;
+    list-style: none;
+    color:white;
+    align-items: center;
+    justify-content: center;
+    height:60px;
+}
+
+.listicon{
+    flex:30%;
+    display: grid;
+    place-items: center;
+}
+
+.listtitle{
+    flex:70%;
+    font-size: 17px;
+}
+
+.sidebarlist:hover{
+    cursor:pointer;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 89%, rgba(0,212,255,1) 100%);
+}
+
+ #active.sidebarlist{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 89%, rgba(0,212,255,1) 100%);
+}
+
+#close.listtitle{
+    display: none;
+}
+
+#close.sidebar{
+    left:-150px;
+}
+
+#close.listicon{
+    margin-left: 150px;
+}
+
+.content{
+    position: relative;
+    left:0px;
+    transition-duration: 0.5s;
+    transition-property: left;
+}
+
+#close.content{
+    left:-150px;
+}
+
